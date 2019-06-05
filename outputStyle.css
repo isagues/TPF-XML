@@ -4,6 +4,7 @@ body{
   color: #EDF5E1;
   font-family: 'Roboto Slab', serif;
 }
+
 .UpVotes-Bar-Table{
     animation: fade-in 2s;
     -moz-animation: fade-in 2s;
