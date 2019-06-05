@@ -3,15 +3,19 @@ body{
   background-color: #5CDB95;
   color: #EDF5E1;
   font-family: 'Roboto Slab', serif;
+  animation: fade-in 2s;
+    -moz-animation: fade-in 2s;
+    -webkit-animation: fade-in 2s;
+    -o-animation: fade-in 2s;
 }
 h1{
   text-align: center;
 } 
+.TopPost{
+  width: 50%;
+}
 .UpVotes-Bar-Table{
-    animation: fade-in 2s;
-    -moz-animation: fade-in 2s;
-    -webkit-animation: fade-in 2s;
-    -o-animation: fade-in 2s;
+    
     background: rgb(55,150,131);
     background: radial-gradient(circle, rgba(55,150,131,1) 0%, rgba(252,70,107,0) 100%);  
   }
@@ -27,6 +31,8 @@ h1{
   /* border: 2px solid #05386B;  */
   border-radius: 30px;
   padding: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .UpVotes-Bar-Table td{
@@ -60,6 +66,7 @@ h1{
 .Users-Table table {
   width: 100%;
   background-color: #379683;
+  margin-top: 80px;
 }
 .Users-Table table, .Users-Table td, .Users-Table th{
   border: 2px solid #05386B;
