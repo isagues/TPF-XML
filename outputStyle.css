@@ -12,9 +12,8 @@ h1{
     -moz-animation: fade-in 2s;
     -webkit-animation: fade-in 2s;
     -o-animation: fade-in 2s;
-    background-color: #379683;
-    opacity: 0.9;
-    
+    background: rgb(55,150,131);
+    background: radial-gradient(circle, rgba(55,150,131,1) 0%, rgba(252,70,107,0) 100%);  
   }
 .UpVotes-Bar-Table table{
   width: 70%;
@@ -22,24 +21,23 @@ h1{
   margin-right: auto;
 
 }
-.UpVotes-Bar-Table th{
-  text-align: center;
-}
-.UpVotes-Bar-Table th, .UpVotes-Bar-Table td{
-  padding: 5px;
-}
+
 .UpVotes-Bar-Table th, .UpVotes-Bar-Table td, .UpVotes-Bar-Table table{
   border-collapse: collapse;
   /* border: 2px solid #05386B;  */
   border-radius: 30px;
+  padding: 5px;
 }
 
 .UpVotes-Bar-Table td{
   color: #05386B;
-  text-align: initial;
+  text-align: right;
 }
 .UpVotes-Bar-Table th{
   font-size: 140%;
+  padding-right: 5%;
+  text-align: right;
+
 }
 
 
