@@ -1,6 +1,13 @@
 
+declare variable $threshold as xs:integer external;
 
-
-(for $p in doc("sources/Posts.xml")/posts/row[51 = @OwnerUserId and @Score = max(//row[51 = @OwnerUserId]/@Score)]
-        order by xs:dateTime($p/@CreationDate)
-        return $p)[1]/@Body/string()
+for $u in doc("sources/users2.xml")/users/row[@Reputation > $threshold]
+    order by $u/@Reputation descending
+    return
+                        <user Id="{$u/@Id/string()}">
+                            <name>{$u/@DisplayName/string()}</name>
+                            <location>{$u/@Location/string()}</location>
+                            <reputation>{xs:integer($u/@Reputation)}</reputation>
+                            <upVotes>{xs:integer($u/@UpVotes)}</upVotes>
+                            <downVotes>{xs:integer($u/@DownVotes)}</downVotes>
+                        </user>
