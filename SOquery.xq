@@ -20,9 +20,9 @@ declare function local:topPost($Id as xs:integer) as xs:string
                             <reputation>{xs:integer($u/@Reputation)}</reputation>
                             <upVotes>{xs:integer($u/@UpVotes)}</upVotes>
                             <downVotes>{xs:integer($u/@DownVotes)}</downVotes>
-                            if(count(doc("sources/Posts.xml")/posts/row[@OwnerUserId = $u/@Id]) = 0)
-                            then
-                            else <top_post>{local:topPost($u/@Id)}</top_post> 
+                            {if(count(doc("sources/Posts.xml")/posts/row[@OwnerUserId = $u/@Id]) = 0)
+                            then ()
+                            else <top_post>{local:topPost($u/@Id)}</top_post> }
                         </user>
             }</users>
         }</result>
