@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ $# -lt 1]
+if [ $# -lt 1 ]
 then
     echo "Invalid number of arguments"
     exit 1
