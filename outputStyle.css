@@ -9,7 +9,7 @@ body{
     -o-animation: fade-in 2s;
   word-break: break-word;
 }
-h1{
+h1, h2{
   text-align: center;
   margin-top: 20px;
   margin-bottom: 60px;

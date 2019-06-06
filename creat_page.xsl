@@ -89,6 +89,7 @@
                 </head>
                 <body>
                     <h1>Error</h1>
+                    <h2><xsl:value-of select="."/></h2>
                 </body>
             </html>
         </xsl:result-document>
