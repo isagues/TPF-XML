@@ -6,7 +6,7 @@ declare function local:topPost($Id as xs:integer) as xs:string
         return $p)[1]/@Body/string()
 };
 
-<result xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="intermediate.xsd">{
+<result xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./sources/intermediate.xsd">{
     if (count(doc("sources/Users.xml")/users/row[@Reputation > $threshold]) = 0)
         then <error>Users not found</error>
         else
