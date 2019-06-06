@@ -43,7 +43,7 @@
                         <table>
                             <tr>
                                 <th>Name</th>
-                                <th>Location</th>
+                                <th class="location">Location</th>
                                 <th>Reputation</th>
                                 <th>UpVotes</th>
                                 <th>DownVotes</th>
@@ -85,6 +85,9 @@
     <xsl:template match="error">
         <xsl:result-document href="./output.html" method="html">
             <html>
+                <head>
+                    <link rel="stylesheet" type="text/css" href="outputStyle.css" />
+                </head>
                 <body>
                     <h1>Error</h1>
                 </body>

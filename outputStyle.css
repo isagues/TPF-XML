@@ -80,6 +80,10 @@ h1{
   width: 50%;
 }
 
+.location{
+  width: 20%;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
