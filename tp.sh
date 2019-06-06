@@ -1,4 +1,10 @@
 #!/bin/bash
+if [ $# -lt 1]
+then
+    echo "Invalid number of arguments"
+    exit 1
+fi
+
 if [ $1 -lt 0 ]
 then
     echo "Invalid value for threshold"
