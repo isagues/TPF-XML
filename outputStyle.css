@@ -2,7 +2,7 @@
 body{
   background-color: #5CDB95;
   color: #EDF5E1;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', 'Roboto', Arial, Helvetica, sans-serif;
   animation: fade-in 2s;
     -moz-animation: fade-in 2s;
     -webkit-animation: fade-in 2s;
@@ -14,9 +14,7 @@ h1{
   margin-top: 20px;
   margin-bottom: 60px;
 } 
-.TopPost{
-  width: 50%;
-}
+
 .UpVotes-Bar-Table{
     
     background: rgb(55,150,131);
@@ -77,6 +75,9 @@ h1{
   border-radius: 7px;
   border-collapse: collapse;
   
+}
+.TopPost{
+  width: 50%;
 }
 
 @keyframes fade-in {
