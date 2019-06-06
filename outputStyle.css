@@ -7,6 +7,7 @@ body{
     -moz-animation: fade-in 2s;
     -webkit-animation: fade-in 2s;
     -o-animation: fade-in 2s;
+  word-break: break-word;
 }
 h1{
   text-align: center;
@@ -69,6 +70,7 @@ h1{
   width: 100%;
   background-color: #379683;
   margin-top: 80px;
+  max-width: 100%;
 }
 .Users-Table table, .Users-Table td, .Users-Table th{
   border: 2px solid #05386B;
