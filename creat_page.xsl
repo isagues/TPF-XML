@@ -29,7 +29,7 @@
                                         <svg class="UpVotes-Bars-Constructor">
                                             <xsl:element name="rect">
                                                 <xsl:attribute name="width">
-                                                    <xsl:value-of select=" (./upVotes div $totalUpVotes) * 400"/>
+                                                    <xsl:value-of select=" (./upVotes div $totalUpVotes) * 300"/>
                                                     <xsl:text>%</xsl:text>
                                                 </xsl:attribute>
                                                 <xsl:attribute name="class">
