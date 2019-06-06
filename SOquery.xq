@@ -12,7 +12,7 @@ declare function local:topPost($Id as xs:integer) as xs:string
         else
             <users>{
                 for $u in doc("sources/Users.xml")/users/row[@Reputation > $threshold]
-                    order by $u/@Reputation descending
+                    order by xs:long($u/@Reputation) descending
                     return
                         <user Id="{$u/@Id/string()}">
                             <name>{$u/@DisplayName/string()}</name>
