@@ -1,5 +1,0 @@
-#!/bin/bash
-
-java net.sf.saxon.Query "$1" > "$1"_Out.xml
-
-exit 0
