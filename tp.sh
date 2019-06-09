@@ -7,7 +7,7 @@ fi
 
 if [ $1 -lt 0 ]
 then
-    echo "Invalid value for threshold"
+    echo "Invalid value for threshold. Must be a positive integer"
     exit 1
 fi
 
@@ -15,7 +15,7 @@ java net.sf.saxon.Query SOquery.xq threshold=$1 > intermediate.xml
 
 java dom.Writer -v -n -s -f intermediate.xml > /dev/null
 
-java net.sf.saxon.Transform threshold=$1  -s:"./intermediate.xml" -xsl:"creat_page.xsl"
+java net.sf.saxon.Transform threshold=$1  -s:"./intermediate.xml" -xsl:"create_page.xsl"
 
 rm intermediate.xml
 
